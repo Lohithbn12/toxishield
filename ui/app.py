@@ -4,7 +4,9 @@ st.set_page_config(page_title="ToxiShield — Moderation Portal", page_icon="�
 st.title("🛡️ ToxiShield — Moderation Portal")
 st.caption("Detect toxic content using a ML model (TF‑IDF + Logistic Regression).")
 
-API_URL = st.secrets.get("API_URL", "http://localhost:8000/predict")
+import os
+API_URL = os.environ.get("API_URL", "https://toxishield.onrender.com/predict")
+
 
 sample = "I totally disagree with you."
 text = st.text_area("Enter text to check", value=sample, height=160)
