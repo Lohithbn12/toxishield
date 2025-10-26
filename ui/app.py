@@ -62,3 +62,5 @@ else:
 
 st.markdown("---")
 st.caption("Model: TF-IDF + Logistic Regression trained on Davidson et al. (2017) hate/offensive language dataset.")
+st.caption("Build: v2")
+
